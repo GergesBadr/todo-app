@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+
+@layer base {
+  .bg-image {
+    background-image: url("assets/images/bg-mobile-light.jpg");
+  }
+  html.dark .bg-image {
+    background-image: url("assets/images/bg-mobile-dark.jpg");
+  }
+  @media (min-width: 768px) {
+    .bg-image {
+      background-image: url("assets/images/bg-desktop-light.jpg");
+      background-position-x: center;
+    }
+    html.dark .bg-image {
+      background-image: url("assets/images/bg-desktop-dark.jpg");
+    }
+  }
+  .filter-btn {
+    @apply duration-300 text-dark-grayish-blue border-b-2 border-b-transparent hover:text-very-dark-grayish-blue dark:hover:text-light-grayish-blue dark:disabled:text-dark-grayish-blue font-semibold disabled:cursor-not-allowed disabled:text-dark-grayish-blue;
+  }
+  .selected-filter-btn {
+    @apply text-bright-blue border-b-bright-blue;
+  }
+}
