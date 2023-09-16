@@ -7,7 +7,9 @@ A simple and responsive Todo application built using ReactJS to help you manage 
 - Mark tasks as completed.
 - Filter tasks by status (All, Active, Completed).
 - Clear completed tasks with one click.
-- Responsive design for various screen sizes
+- Tasks will be saved if you close the website and get back another time
+- Responsive design for various screen sizes.
+- Light and dark theme, with local storage used.
 
 ## Tech
 
