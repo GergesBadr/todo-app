@@ -1,3 +1,6 @@
+import sunIcon from "../images/icon-sun.svg";
+import moonIcon from "../images/icon-moon.svg";
+
 function Header({ theme, onThemeSwitch }) {
   return (
     <div className="flex items-center justify-between">
@@ -6,9 +9,9 @@ function Header({ theme, onThemeSwitch }) {
       </h1>
       <button onClick={() => onThemeSwitch()}>
         {theme === "dark" ? (
-          <img src="assets/images/icon-sun.svg" alt="toggle theme" />
+          <img src={sunIcon} alt="toggle theme" />
         ) : (
-          <img src="assets/images/icon-moon.svg" alt="toggle theme" />
+          <img src={moonIcon} alt="toggle theme" />
         )}
       </button>
     </div>

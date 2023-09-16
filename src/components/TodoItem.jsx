@@ -1,3 +1,7 @@
+import iconCheck from "../images/icon-check.svg";
+import iconCrossDark from "../images/icon-cross-dark.svg";
+import iconCrossLight from "../images/icon-cross-light.svg";
+
 function TodoItem({ item, onDeleteTodo, onCompletedTodo, theme }) {
   return (
     <li className="px-6 py-4 flex items-center justify-between">
@@ -13,11 +17,7 @@ function TodoItem({ item, onDeleteTodo, onCompletedTodo, theme }) {
         }`}
       >
         {item.isDone && (
-          <img
-            src="assets/images/icon-check.svg"
-            alt="check mark"
-            aria-hidden={true}
-          />
+          <img src={iconCheck} alt="check mark" aria-hidden={true} />
         )}
       </button>
       <p
@@ -31,9 +31,9 @@ function TodoItem({ item, onDeleteTodo, onCompletedTodo, theme }) {
       </p>
       <button onClick={() => onDeleteTodo(item.id)}>
         {theme === "dark" ? (
-          <img src="assets/images/icon-cross-dark.svg" alt="delete todo" />
+          <img src={iconCrossDark} alt="delete todo" />
         ) : (
-          <img src="assets/images/icon-cross-light.svg" alt="delete todo" />
+          <img src={iconCrossLight} alt="delete todo" />
         )}
       </button>
     </li>

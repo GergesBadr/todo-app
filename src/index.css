@@ -4,18 +4,18 @@
 
 @layer base {
   .bg-image {
-    background-image: url("assets/images/bg-mobile-light.jpg");
+    background-image: url("images/bg-mobile-light.jpg");
   }
   html.dark .bg-image {
-    background-image: url("assets/images/bg-mobile-dark.jpg");
+    background-image: url("images/bg-mobile-dark.jpg");
   }
   @media (min-width: 768px) {
     .bg-image {
-      background-image: url("assets/images/bg-desktop-light.jpg");
+      background-image: url("images/bg-desktop-light.jpg");
       background-position-x: center;
     }
     html.dark .bg-image {
-      background-image: url("assets/images/bg-desktop-dark.jpg");
+      background-image: url("images/bg-desktop-dark.jpg");
     }
   }
   .filter-btn {
